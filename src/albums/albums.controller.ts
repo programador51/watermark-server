@@ -1,17 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Patch,
-  Param,
-  Delete,
-  Req,
-  Res,
-  UseInterceptors,
-  UploadedFile,
-  Query,
-} from '@nestjs/common';
+import { Controller, Get, Param, Req, Res, Query } from '@nestjs/common';
 import { Request, Response } from 'express';
 
 import { AlbumsService } from './albums.service';

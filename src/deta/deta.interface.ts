@@ -6,7 +6,7 @@ export interface ParamsUpload {
    * 'photos'
    */
   drivename: string;
-  file: Buffer | string;
+  file: string;
   options: PutOptions;
 }
 

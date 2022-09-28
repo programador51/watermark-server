@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { Deta } from 'deta';
-import axios from 'axios';
 import { ParamsDownload, ParamsUpload } from './deta.interface';
 
 @Injectable()

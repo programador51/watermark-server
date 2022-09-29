@@ -11,6 +11,9 @@ import { AlbumsService } from './albums/albums.service';
 import { AlbumsModule } from './albums/albums.module';
 import { PaginationService } from './pagination/pagination.service';
 import { PaginationModule } from './pagination/pagination.module';
+import { EmailService } from './email/email.service';
+import { KofisModule } from './kofis/kofis.module';
+import { EmailModule } from './email/email.module';
 
 @Module({
   imports: [
@@ -19,8 +22,10 @@ import { PaginationModule } from './pagination/pagination.module';
     DetaModule,
     MongooseModule.forRoot(process.env.MONGO_DB_CONNECTION),
     PaginationModule,
+    KofisModule,
+    EmailModule,
   ],
   controllers: [AppController],
-  providers: [AppService, DetaService, ZipService, PaginationService],
+  providers: [AppService, DetaService, ZipService, PaginationService, EmailService],
 })
 export class AppModule {}
